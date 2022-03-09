@@ -103,7 +103,7 @@ def convert_lab_to_csv(infile:str, outfile:str, printfn) -> None:
                 except (ValueError, IndexError):
                     printfn(f'*** Error with section. Skip: {c}')
 
-            section_dict['name'] = f'{section_dict["oid"]}_{section_dict["nom"]}'
+            section_dict['name'] = section_dict["nom"]
             section_dict['sortname'] = (int(section_dict["oid"]), section_dict["name"])
             data.append(section_dict)
 
