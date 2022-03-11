@@ -9,6 +9,9 @@ You can either use GUI or simply Drag'n'Drop `lab` file onto `exe` to immediatel
 Download: https://github.com/xtotdam/lab2csv/releases
 
 
+![Screenshot](https://user-images.githubusercontent.com/5108025/157852537-447f7085-c3c8-4d8c-9b0d-95c9ce0c77af.png)
+
+
 ### Requirements to build
 
 * `pyinstaller`

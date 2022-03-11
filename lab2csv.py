@@ -25,7 +25,7 @@ layout = [
             initial_folder=getcwd(), button_color='green'),
         sg.Button('Quit', button_color='red')
     ],
-    [sg.Multiline('', size=(50, 10), key='output', disabled=True, expand_x=True)],
+    [sg.Multiline('', size=(50, 10), key='output', disabled=True, expand_x=True, expand_y=True)],
     [sg.Text("Drag'n'Drop lab file onto this exe file should work too.")],
     [sg.Text('https://github.com/xtotdam/lab2csv', enable_events=True, key='github', font='Any 8', expand_x=True, justification='right', text_color='blue')],
 ]
