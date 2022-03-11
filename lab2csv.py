@@ -12,10 +12,13 @@ import ctypes
 import platform
 
 def make_dpi_aware() -> None:
-    if int(platform.release()) >= 8:
+    if int(platform.release().split('.')[0]) >= 8:
         ctypes.windll.shcore.SetProcessDpiAwareness(True)
 
-make_dpi_aware()
+try:
+    make_dpi_aware()
+except:
+    pass
 
 sg.theme('Reddit')
 layout = [
